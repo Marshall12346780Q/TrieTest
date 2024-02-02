@@ -1,0 +1,5 @@
+This program is intended to test and demonstrate Tries as a data structure for String storage.
+Version 1 is a naive Trie implementation using TreeMap for child nodes and a modified DFS to print all Strings.
+The choice of data structure provides fast lookup as desired, but is somewhat convoluted considering a Node doesn't contain it's own character, but rather is mapped to it in it's container. Also, a couple of 'packaging' records are used to pass pointers within the Trie. This is useful but somewhat convoluted in it's current implementation. The search/add methods could be better encapsulated.
+
+Future versions could include known trie optimization techniques for storing references, and development of an autocomplete search-bar that bases suggestions on parsed text from various sources.
